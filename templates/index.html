@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عمارت تندیس</title>
+    <link rel="stylesheet" href="../statics/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Background -->
+    <div class="blur-overlay"></div>
+    <div class="glass-ball"></div>
+    <div class="glass-ball"></div>
+    <div class="glass-ball"></div>
+    <div class="glass-ball"></div>
+    <div class="glass-ball"></div>
+
+    <!-- Intro Sesion -->
+    <section class="intro">
+        <h1>عمارت تندیس</h1>
+        <div class="container">
+            <div class="icon-button" id="openPopup">
+                <i class="fas fa-phone"></i><span>تماس</span>
+            </div>
+            <div class="icon-button" id="openPopup2">
+                <i class="fas fa-location"></i><span>آدرس</span>
+            </div>
+            <div class="icon-button">
+                <i class="fas fa-sticky-note"></i><span>رزرو</span>
+            </div>
+            <div class="icon-button" onclick="window.open('https://www.instagram.com/emarat_tandis20/')">
+                <i class="fa-brands fa-instagram"></i><span>اینستاگرام</span>
+            </div>
+            <div class="icon-button" onclick="window.open('https://t.me/talartandis20')">
+                <i class="fa-brands fa-telegram"></i><span>تلگرام</span>
+            </div>
+        </div>
+        <h3>بازدید آنلاین</h3>
+        <i class="fas fa-arrow-down arrow-bottom" onclick="window.open('#first-pano', '_self')"></i>
+    </section>
+
+    <!-- First Pano Sesion -->
+    <section class="first-pano" id="first-pano">
+        <h2>بازدید آنلاین عمارت تندیس</h2>
+        <div id="pano-1" dir="ltr"></div>
+    </section>
+
+    <!-- Contact Popup -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content">
+            <span class="close-btn" id="closePopup">&times;</span>
+            <button class="popup-button" onclick="window.open('tel:+982146073420')">تلفن ثابت</button>
+            <button class="popup-button" onclick="window.open('tel:+989015588808')">موبایل</button>
+        </div>
+    </div>
+
+    <!-- Adderess Popup -->
+    <div class="popup-overlay" id="popupOverlay2">
+        <div class="popup-content2">
+            <span class="close-btn" id="closePopup2">&times;</span>
+            <h2>کیلومتر 16بزرگراه لشکری، کمربندی اندیشه، بعد از پل کفش ملی، ابتدای خ هاشمی رفسنجانی، عمارت تندیس,</h2>
+            <iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.0650992567464!2d51.14083207990175!3d35.695209195899295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8df12ba10040b3%3A0x1008efe4a68d6fc7!2z2KrYp9mE2KfYsSDYqtmG2K_bjNiz!5e0!3m2!1sfa!2sde!4v1732972957943!5m2!1sfa!2sde" allowfullscreen="" loading="lazy"></iframe>
+            <button class="popup-button" onclick="window.open('geo:35.695228,51.141232')">مسیریابی</button>
+        </div>
+    </div>
+
+    <!-- Pannellum library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pannellum/2.5.6/pannellum.css"
+    integrity="sha512-UoT/Ca6+2kRekuB1IDZgwtDt0ZUfsweWmyNhMqhG4hpnf7sFnhrLrO0zHJr2vFp7eZEvJ3FN58dhVx+YMJMt2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pannellum/2.5.6/pannellum.js"
+    integrity="sha512-EmZuy6vd0ns9wP+3l1hETKq/vNGELFRuLfazPnKKBbDpgZL0sZ7qyao5KgVbGJKOWlAFPNn6G9naB/8WnKN43Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- End Pannellum library -->
+    <script src="../statics/js/pano.js"></script>
+    <script src="../statics/js/script.js"></script>
+</body>
+</html>
