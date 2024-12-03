@@ -27,3 +27,31 @@ document.getElementById('closePopup2').addEventListener('click', function() {
         document.getElementById('popupOverlay2').style.opacity = '0';
     }, 300);
 });
+
+// Galery
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Function to animate gallery items
+function animateGalleryItems() {
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    galleryItems.forEach(item => {
+        if (isInViewport(item)) {
+            item.classList.add('show');
+        }
+    });
+}
+
+// Event listener for scroll
+window.addEventListener('scroll', animateGalleryItems);
+
+// Initial call to check items already in viewport
+animateGalleryItems();

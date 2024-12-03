@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Animation Gallery</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #0d1117;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 100px;
+      margin-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .image-container {
+      position: relative;
+      width: 80%;
+      max-width: 600px;
+      overflow: hidden;
+      transform: translate(0, 0) scale(1.2);
+      opacity: 0;
+      transition: transform 1s ease, opacity 1s ease;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      transition: filter 1s ease;
+      filter: blur(10px);
+    }
+
+    /* Active State Animation */
+    .image-container.active {
+      opacity: 1;
+    }
+
+    .image-container.active img {
+      filter: blur(0);
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <div class="image-container" data-start="0,0" data-end="0,0">
+      <img src="https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg" alt="Image 1">
+    </div>
+    <div class="image-container" data-start="0,0" data-end="0,0">
+      <img src="https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg" alt="Image 2">
+    </div>
+    <div class="image-container" data-start="0,0" data-end="0,0">
+      <img src="https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg" alt="Image 3">
+    </div>
+    <div class="image-container" data-start="0,0" data-end="0,0">
+      <img src="https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg" alt="Image 4">
+    </div>
+  </div>
+  <script>
+    // Helper Function to Generate Random Positions
+    function randomPosition(maxX, maxY) {
+      const x = Math.random() * maxX - maxX / 2; // Random X within viewport width
+      const y = Math.random() * maxY - maxY / 2; // Random Y within viewport height
+      return [x, y];
+    }
+
+    const images = document.querySelectorAll('.image-container');
+
+    // Set initial and final random positions for images
+    images.forEach(image => {
+      const startPos = randomPosition(window.innerWidth / 2, window.innerHeight / 2);
+      const endPos = randomPosition(window.innerWidth / 4, window.innerHeight / 4);
+      image.setAttribute('data-start', `${startPos[0]},${startPos[1]}`);
+      image.setAttribute('data-end', `${endPos[0]},${endPos[1]}`);
+      image.style.transform = `translate(${startPos[0]}px, ${startPos[1]}px) scale(1.2)`;
+    });
+
+    const onScroll = () => {
+      images.forEach(image => {
+        const rect = image.getBoundingClientRect();
+        const inView = rect.top < window.innerHeight - 100 && rect.bottom > 100;
+
+        if (inView) {
+          const endPos = image.getAttribute('data-end').split(',');
+          image.style.transform = `translate(${endPos[0]}px, ${endPos[1]}px) scale(1)`;
+          image.classList.add('active');
+        } else {
+          const startPos = image.getAttribute('data-start').split(',');
+          image.style.transform = `translate(${startPos[0]}px, ${startPos[1]}px) scale(1.2)`;
+          image.classList.remove('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', onScroll);
+
+    // Trigger on load to activate images already in view
+    onScroll();
+  </script>
+</body>
+</html>
