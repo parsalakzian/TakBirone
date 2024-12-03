@@ -46,6 +46,8 @@ function animateGalleryItems() {
     galleryItems.forEach(item => {
         if (isInViewport(item)) {
             item.classList.add('show');
+        }else {
+            item.classList.remove('show');
         }
     });
 }
