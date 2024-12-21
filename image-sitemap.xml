@@ -1,101 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image/1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap-image/1.1
+        http://www.sitemaps.org/schemas/sitemap-image/1.1/sitemap-image.xsd">
+
+    <url>
+        <loc>https://talartandis.ir/</loc>
+        <lastmod>2023-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
     <url>
         <loc>https://talartandis.ir/statics/img/1.webp</loc>
         <image:image>
             <image:loc>https://talartandis.ir/statics/img/1.webp</image:loc>
-            <image:title>تالار تندیس - نمای داخلی 1</image:title>
+            <image:caption>نمای داخلی تالار تندیس با طراحی مدرن و نورپردازی زیبا</image:caption>
         </image:image>
     </url>
     <url>
         <loc>https://talartandis.ir/statics/img/2.webp</loc>
         <image:image>
             <image:loc>https://talartandis.ir/statics/img/2.webp</image:loc>
-            <image:title>تالار تندیس - نمای داخلی 2</image:title>
+            <image:caption>چیدمان مجلل تالار تندیس برای مراسم</image:caption>
         </image:image>
     </url>
     <url>
         <loc>https://talartandis.ir/statics/img/3.webp</loc>
         <image:image>
             <image:loc>https://talartandis.ir/statics/img/3.webp</image:loc>
-            <image:title>تالار تندیس - مراسم عروسی</image:title>
+            <image:caption>مراسم عروسی در تالار تندیس با دکوراسیون خاص</image:caption>
         </image:image>
     </url>
     <url>
         <loc>https://talartandis.ir/statics/img/4.webp</loc>
         <image:image>
             <image:loc>https://talartandis.ir/statics/img/4.webp</image:loc>
-            <image:title>تالار تندیس - فضای مراسم</image:title>
+            <image:caption>فضای مراسم در تالار تندیس با تزئینات شیک</image:caption>
         </image:image>
     </url>
     <url>
         <loc>https://talartandis.ir/statics/img/5.webp</loc>
         <image:image>
             <image:loc>https://talartandis.ir/statics/img/5.webp</image:loc>
-            <image:title>تالار تندیس - تزئینات داخلی</image:title>
+            <image:caption>تزئینات داخلی تالار تندیس با سلیقه و دقت</image:caption>
         </image:image>
     </url>
     <url>
         <loc>https://talartandis.ir/statics/img/6.webp</loc>
         <image:image>
             <image:loc>https://talartandis.ir/statics/img/6.webp</image:loc>
-            <image:title>تالار تندیس - فضایی برای جشن تولد</image:title>
+            <image:caption>فضای مناسب برای جشن تولد در تالار تندیس</image:caption>
         </image:image>
     </url>
     <url>
         <loc>https://talartandis.ir/statics/img/7.webp</loc>
         <image:image>
             <image:loc>https://talartandis.ir/statics/img/7.webp</image:loc>
-            <image:title>تالار تندیس - نمای بیرونی</image:title>
+            <image:caption>نمای بیرونی تالار تندیس با طراحی مدرن</image:caption>
         </image:image>
     </url>
     <url>
         <loc>https://talartandis.ir/statics/img/8.webp</loc>
         <image:image>
             <image:loc>https://talartandis.ir/statics/img/8.webp</image:loc>
-            <image:title>تالار تندیس - مراسم سمینار</image:title>
+            <image:caption>مراسم سمینار در تالار تندیس با تجهیزات پیشرفته</image:caption>
         </image:image>
     </url>
     <url>
         <loc>https://talartandis.ir/statics/img/9.webp</loc>
         <image:image>
             <image:loc>https://talartandis.ir/statics/img/9.webp</image:loc>
-            <image:title>تالار تندیس - طراحی مدرن</image:title>
+            <image:caption>طراحی زیبا و مدرن تالار تندیس</image:caption>
         </image:image>
     </url>
     <url>
         <loc>https://talartandis.ir/statics/img/10.webp</loc>
         <image:image>
             <image:loc>https://talartandis.ir/statics/img/10.webp</image:loc>
-            <image:title>تالار تندیس - فضایی برای کنفرانس</image:title>
+            <image:caption>فضای مناسب برای کنفرانس در تالار تندیس</image:caption>
         </image:image>
     </url>
     <url>
         <loc>https://talartandis.ir/statics/img/11.webp</loc>
         <image:image>
             <image:loc>https://talartandis.ir/statics/img/11.webp</image:loc>
-            <image:title>تالار تندیس - خدمات مجالس</image:title>
+            <image:caption>خدمات مجالس با کیفیت در تالار تندیس</image:caption>
         </image:image>
     </url>
     <url>
         <loc>https://talartandis.ir/statics/img/12.webp</loc>
         <image:image>
             <image:loc>https://talartandis.ir/statics/img/12.webp</image:loc>
-            <image:title>تالار تندیس - نمای زیبای شب</image:title>
+            <image:caption>نمای زیبای شب تالار تندیس با نورپردازی خاص</image:caption>
         </image:image>
     </url>
     <url>
         <loc>https://talartandis.ir/statics/img/13.webp</loc>
         <image:image>
             <image:loc>https://talartandis.ir/statics/img/13.webp</image:loc>
-            <image:title>تالار تندیس - مراسم خاص</image:title>
+            <image:caption>مراسم خاص در تالار تندیس با خدمات ویژه</image:caption>
         </image:image>
     </url>
     <url>
         <loc>https://talartandis.ir/statics/img/14.webp</loc>
         <image:image>
             <image:loc>https://talartandis.ir/statics/img/14.webp</image:loc>
-            <image:title>تالار تندیس - فضای مناسب برای رویدادها</image:title>
+            <image:caption>فضای مناسب برای رویدادها و جشن‌ها در تالار تندیس</image:caption>
         </image:image>
     </url>
     <url>
